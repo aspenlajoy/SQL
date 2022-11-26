@@ -17,4 +17,11 @@ INSERT INTO tea_shop VALUES (14, "Red Clover", 4.99, 3, 42);
 INSERT INTO tea_shop VALUES (15, "Dandelion", 4.99, 3, 32);
 INSERT INTO tea_shop VALUES (16, "Raspberry Leaf", 4.99, 3, 26);
 
+--order database by low inventory
 SELECT * FROM tea_shop WHERE inventory<34 
+
+--order database by aisle
+SELECT * FROM tea_shop ORDER BY aisle ASC;
+
+--order database by prices under 4.49
+SELECT * FROM tea_shop WHERE pirce<4.49;
